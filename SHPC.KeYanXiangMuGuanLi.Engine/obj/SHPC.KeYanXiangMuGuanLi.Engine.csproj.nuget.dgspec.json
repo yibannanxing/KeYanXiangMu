@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\zzqworks\\SHPC.KeYanXiangMuGuanLi\\SHPC.KeYanXiangMuGuanLi.Engine\\SHPC.KeYanXiangMuGuanLi.Engine.csproj": {}
+  },
+  "projects": {
+    "C:\\zzqworks\\SHPC.KeYanXiangMuGuanLi\\SHPC.KeYanXiangMuGuanLi.Engine\\SHPC.KeYanXiangMuGuanLi.Engine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\zzqworks\\SHPC.KeYanXiangMuGuanLi\\SHPC.KeYanXiangMuGuanLi.Engine\\SHPC.KeYanXiangMuGuanLi.Engine.csproj",
+        "projectName": "SHPC.KeYanXiangMuGuanLi.Engine",
+        "projectPath": "C:\\zzqworks\\SHPC.KeYanXiangMuGuanLi\\SHPC.KeYanXiangMuGuanLi.Engine\\SHPC.KeYanXiangMuGuanLi.Engine.csproj",
+        "packagesPath": "C:\\Users\\yibannanxing\\.nuget\\packages\\",
+        "outputPath": "C:\\zzqworks\\SHPC.KeYanXiangMuGuanLi\\SHPC.KeYanXiangMuGuanLi.Engine\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yibannanxing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

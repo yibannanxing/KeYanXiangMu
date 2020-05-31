@@ -1,0 +1,1599 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SHPC.KeYanXiangMuGuanLi.Web</name>
+    </assembly>
+    <members>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiaoCaiController.SaveCgJiaoCai(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.Int32)">
+            <summary>
+            保存教材
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiaoCaiController.SaveCgjl(SHPC.KeYanXiangMuGuanLi.Engine.Models.CgJiaoCai,SHPC.KeYanXiangMuGuanLi.Web.Utils.JiLu,System.Int32)">
+            <summary>
+            保存成功记录
+            </summary>
+            <param name="entity"></param>
+            <param name="jiLu"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiaoCaiController.GetJiaoCaiById(System.Guid)">
+            <summary>
+            获取教材详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiaoCaiController.DelShenHe(System.Guid)">
+            <summary>
+            消除 审核意见
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiaoCaiController.GetJiaoCaiS">
+            <summary>
+            教材统计 不带分页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiaoCaiController.GetJiaoCaiSByFenYe(System.Int32,System.Int32)">
+            <summary>
+            教材统计 带分页
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiaoCaiController.GetJiaoCaiByBase(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            教材筛选
+            </summary>
+            <param name="applyName"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="isHuoJiang"></param>
+            <param name="cgName"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetCgJilus(System.Int32,System.Int32)">
+            <summary>
+            总览
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetMycgjilus(System.Int32,System.Int32)">
+             <summary>
+            个人
+             </summary>
+             <param name="skip"></param>
+             <param name="take"></param>
+             <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetCgJiLuByStatus(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            根据状态获取
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.SelectJiLu(System.Int32,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            筛选 科研处未审核的
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <param name="name"></param>
+            <param name="bumen"></param>
+            <param name="zhuangtai"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetCgJiluBase(System.Int32,System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            筛选
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <param name="applyName"></param>
+            <param name="bumen"></param>
+            <param name="mingcheng"></param>
+            <param name="xiangmuleixing"></param>
+            <param name="huojiangleixing"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="huojiangtime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetCgjlById(System.Guid)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.DelCgkyxm(System.Guid)">
+            <summary>
+            删除 cgkyxm
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.DelCgZhuZuo(System.Guid)">
+            <summary>
+            删除 著作
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.DelCgJiaoCai(System.Guid)">
+            <summary>
+            删除 教材
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.DelCgLunWen(System.Guid)">
+            <summary>
+            删除 论文
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.DelRuanJian(System.Guid)">
+            <summary>
+            删除 软件与专利
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.DelQita(System.Guid)">
+            <summary>
+            删除 其他
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.DelCgjl(System.Guid)">
+            <summary>
+            更改记录
+            </summary>
+            <param name="id">成果id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetShenHeYiJian(System.Guid,System.Int32)">
+            <summary>
+            获取审核意见
+            </summary>
+            <param name="id">成果id</param>
+            <param name="status">退回 部门审核 科研处审核 （意见）</param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetJiLuByBuMenShenHe(System.Int32,System.Int32)">
+            <summary>
+            查询部门已审核的
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetJiLuByChushenren(System.Int32,System.Int32)">
+            <summary>
+            查询初审人审核
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetJiLuByKeYanChu(System.Int32,System.Int32)">
+            <summary>
+            查询科研处已审核的
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetJiLuByid(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetJilus(System.Int32,System.Int32)">
+            <summary>
+            查询每个人
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetJilusByziduan(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            筛选
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <param name="applyName"></param>
+            <param name="bumen"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetNianDusByziduan(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            筛选 年度
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <param name="applyName"></param>
+            <param name="bumen"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.UpdateKeYanFen(System.Guid,System.String)">
+            <summary>
+            科研分
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.SaveNianDu">
+            <summary>
+            根据记录添加年度考核分
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.UpdateNianDu(SHPC.KeYanXiangMuGuanLi.Engine.Models.CgNianDuKaoHeFen)">
+            <summary>
+            编辑 年度考核分
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetNianDuById(System.Guid)">
+            <summary>
+            获取本年 年度考核详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.GetNianDus(System.Int32,System.Int32)">
+            <summary>
+            获取年度考核表
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgky(System.Guid)">
+            <summary>
+            获取科研项目
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgkybyniandu(System.Guid,System.String)">
+            <summary>
+            获取科研项目 带年度
+            </summary>
+            <param name="id"></param>
+            <param name="nianDu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgzz(System.Guid)">
+            <summary>
+            获取著作
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgzzbyniandu(System.Guid,System.String)">
+            <summary>
+            获取著作 带年度
+            </summary>
+            <param name="id"></param>
+            <param name="nianDu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgjc(System.Guid)">
+            <summary>
+            获取教材
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgjcbyniandu(System.Guid,System.String)">
+            <summary>
+            获取教材 带年度
+            </summary>
+            <param name="id"></param>
+            <param name="nianDu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcglw(System.Guid)">
+            <summary>
+            获取论文
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcglwbyniandu(System.Guid,System.String)">
+            <summary>
+            获取论文 带年度
+            </summary>
+            <param name="id"></param>
+            <param name="nianDu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgrj(System.Guid)">
+            <summary>
+            获取软件
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgrjbyniandu(System.Guid,System.String)">
+            <summary>
+            获取软件 带年度
+            </summary>
+            <param name="id"></param>
+            <param name="nianDu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgqt(System.Guid)">
+            <summary>
+            获取其他
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Getcgqtbyniandu(System.Guid,System.String)">
+            <summary>
+            获取其他
+            </summary>
+            <param name="id"></param>
+            <param name="nianDu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_JiLuController.Addkyf(System.Guid,System.String)">
+            <summary>
+            计算科研分
+            </summary>
+            <param name="id"></param>
+            <param name="niandu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_KeYanXiangMuController.SaveCGkyxm(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.String,System.String,System.Int32)">
+            <summary>
+            保存成果（科研项目）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_KeYanXiangMuController.AddCgkyxm(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.Int32,System.Int32)">
+            <summary>
+            添加cgkyxm
+            </summary>
+            <param name="entity"></param>
+            <param name="zt">状态</param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_KeYanXiangMuController.SaveCgjl(SHPC.KeYanXiangMuGuanLi.Engine.Models.CgKeYanXiangMu,SHPC.KeYanXiangMuGuanLi.Web.Utils.JiLu,System.Collections.Generic.List{SHPC.KeYanXiangMuGuanLi.Web.Utils.canyuze},System.Int32)">
+            <summary>
+            保存成功记录
+            </summary>
+            <param name="entity"></param>
+            <param name="canyuzes"></param>
+            <param name="jilu"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_KeYanXiangMuController.GetCgkyxmById(System.Guid)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_KeYanXiangMuController.GetShenHe(System.Guid)">
+            <summary>
+            获取最近一条审核记录
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_KeYanXiangMuController.GetKeYanXiangMuS">
+            <summary>
+            科研项目统计 不带分页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_KeYanXiangMuController.GetKeYanXiangMuSByFenYe(System.Int32,System.Int32)">
+            <summary>
+            科研项目统计 带分页
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_KeYanXiangMuController.GetKeYanXiangMuByBase(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            科研项目 筛选
+            </summary>
+            <param name="applyName"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="isHuoJiang"></param>
+            <param name="cgName"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.SaveCgLunWen(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.Int32)">
+            <summary>
+            保存 论文
+            </summary>
+            <param name="entity"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.SaveCgjl(SHPC.KeYanXiangMuGuanLi.Engine.Models.CgLunWen,SHPC.KeYanXiangMuGuanLi.Web.Utils.JiLu,System.Collections.Generic.List{SHPC.KeYanXiangMuGuanLi.Web.Utils.canyuze},System.Int32)">
+            <summary>
+            保存成功记录
+            </summary>
+            <param name="entity"></param>
+            <param name="canyuzes"></param>
+            <param name="jiLu"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.GetCgLunWenById(System.Guid)">
+            <summary>
+            获取 论文
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.DelShenHe(System.Guid)">
+            <summary>
+            消除 审核意见
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.GetLunWenS">
+            <summary>
+            论文统计 不带分页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.GetLunWenSByFenYe(System.Int32,System.Int32)">
+            <summary>
+            论文统计 不带分页
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.GetLunWenByBase(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            论文筛选
+            </summary>
+            <param name="applyName"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="isHuoJiang"></param>
+            <param name="cgName"></param>
+            <param name="isChuBan"></param>
+            <param name="renDingFanWei"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.updateBuMen">
+            <summary>
+            修改部门
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.LunWen">
+            <summary>
+            论文
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.LunWen.BuMenMingCheng">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.LunWen.CgLunWen">
+            <summary>
+            成果_论文
+            </summary>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_LunWenController.GetLunWenByRenDingFanWei">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_QitaController.SaveCgQita(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.Int32)">
+            <summary>
+            保存 成果 其他
+            </summary>
+            <param name="entity"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_QitaController.SaveCgjl(SHPC.KeYanXiangMuGuanLi.Engine.Models.CgQiTa,SHPC.KeYanXiangMuGuanLi.Web.Utils.JiLu,System.Int32)">
+            <summary>
+            保存成功记录
+            </summary>
+            <param name="entity"></param>
+            <param name="jiLu"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_QitaController.GetCgQitaById(System.Guid)">
+            <summary>
+            获取 其他详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_QitaController.DelShenHe(System.Guid)">
+            <summary>
+            消除 审核意见
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_QitaController.GetQiTaS">
+            <summary>
+            其他 统计 不带分页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_QitaController.GetQiTaSByFenYe(System.Int32,System.Int32)">
+            <summary>
+            其他统计 带分页
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_QitaController.GetQiTaByBase(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            筛选其他
+            </summary>
+            <param name="applyName"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="isHuoJiang"></param>
+            <param name="cgName"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_RuanJianController.SaveCgRuanJian(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.Int32)">
+            <summary>
+            保存 软件
+            </summary>
+            <param name="entity"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_RuanJianController.SaveCgjl(SHPC.KeYanXiangMuGuanLi.Engine.Models.CgRuanJianYuZhuanLi,SHPC.KeYanXiangMuGuanLi.Web.Utils.JiLu,System.Collections.Generic.List{SHPC.KeYanXiangMuGuanLi.Web.Utils.canyuze},System.Int32)">
+            <summary>
+            保存成功记录
+            </summary>
+            <param name="entity"></param>
+            <param name="canyuzes"></param>
+            <param name="jiLu"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_RuanJianController.GetCgRuanJianById(System.Guid)">
+            <summary>
+            获取 著作详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_RuanJianController.DelShenHe(System.Guid)">
+            <summary>
+            消除 审核意见
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_RuanJianController.GetRuanJianS(System.Int32)">
+            <summary>
+            查询软件 不带分页
+            </summary>
+            <param name="lx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_RuanJianController.GetRuanJianSByFenYe(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            查询软件 带分页
+            </summary>
+            <param name="lx"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_RuanJianController.GetRuanJianByBase(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            筛选软件
+            </summary>
+            <param name="lx"></param>
+            <param name="applyName"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="isHuoJiang"></param>
+            <param name="cgName"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.shenhe(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.Int32)">
+            <summary>
+            审核
+            </summary>
+            <param name="entity"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.tuihui(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.Int32)">
+            <summary>
+            部门，科研处退回
+            </summary>
+            <param name="entity"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.SaveShenHe(System.Guid,SHPC.KeYanXiangMuGuanLi.Engine.Models.CgShenHe,System.Int32)">
+            <summary>
+            审核
+            </summary>
+            <param name="id"></param>
+            <param name="entity"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.Savetuihui(System.Guid,System.String)">
+            <summary>
+            退回
+            </summary>
+            <param name="id"></param>
+            <param name="yijian"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.GetShenHeYiJian(System.Guid,System.Int32)">
+            <summary>
+            获取 审核意见(部门)
+            </summary>
+            <param name="id"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.GetkycYiJian(System.Guid,System.Int32)">
+            <summary>
+            获取 审核意见(科研处)
+            </summary>
+            <param name="id"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.GetthYiJian(System.Guid,System.Int32)">
+            <summary>
+            获取 审核意见(退回)
+            </summary>
+            <param name="id"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.BumenShenHeQuanXian">
+            <summary>
+            部门审核权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.KeYanChuShenHeQuanXian">
+            <summary>
+            科研处审核权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.ChuShen">
+            <summary>
+            科研初审权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.GetList">
+            <summary>
+            获取权限id 集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.Getid">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.GetUserName">
+            <summary>
+            获取当前登录人姓名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.GetShenHeYiJians(System.Guid)">
+            <summary>
+            获取 全部意见
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.BuMenShenHes(System.Collections.Generic.List{SHPC.KeYanXiangMuGuanLi.Engine.Models.CgJiLu},System.Int32)">
+            <summary>
+            部门批量审核
+            </summary>
+            <param name="entity"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ShenHeController.ZhiJieShenHe(System.Guid,System.Int32)">
+            <summary>
+            部门直接审核
+            </summary>
+            <param name="id"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ZhuZuoController.SaveCgZhuzuo(SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ZhuZuoController.GetCgZhuZuoById(System.Guid)">
+            <summary>
+            获取 著作详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ZhuZuoController.SaveCgjl(SHPC.KeYanXiangMuGuanLi.Engine.Models.CgZuZhuo,SHPC.KeYanXiangMuGuanLi.Web.Utils.JiLu,System.Collections.Generic.List{SHPC.KeYanXiangMuGuanLi.Web.Utils.canyuze},System.Int32)">
+            <summary>
+            保存成功记录
+            </summary>
+            <param name="entity"></param>
+            <param name="canyuzes"></param>
+            <param name="jiLu"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ZhuZuoController.DelShenHe(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ZhuZuoController.GetZhuZhuoS">
+            <summary>
+            不带分页 著作统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ZhuZuoController.GetZhuZhuoSByFenYe(System.Int32,System.Int32)">
+            <summary>
+            带分页 著作统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.Cg_ZhuZuoController.GetZhuZhuoByBase(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            筛选著作
+            </summary>
+            <param name="applyName"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="isHuoJiang"></param>
+            <param name="cgName"></param>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.GetJieXiang(System.Guid)">
+            <summary>
+            根据立项查找结项项目
+            </summary>
+            <param name="id">立项id</param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.GetJieXiangZuYuans(System.Guid)">
+            <summary>
+            根据立项查找结项组员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.GetJieXiangJingFeis(System.Guid)">
+            <summary>
+            根据立项查找结项经费
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.SaveJieXiangZuyuan(System.Guid)">
+            <summary>
+            保存结项组员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.SaveJieXiang(SHPC.KeYanXiangMuGuanLi.Web.Utils.JieXiang_RequestBag)">
+            <summary>
+            保存结项
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.deljfbyid(System.Guid,System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="lixiangid"></param>
+            <param name="jiexiangid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.GetJieXinags(System.Int32,System.Int32)">
+            <summary>
+            获取结项列表
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.updatelixiang(System.Guid)">
+            <summary>
+            结项时 更改立项状态
+            </summary>
+            <param name="lixiangid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.DelJieXiang(System.Guid)">
+            <summary>
+            删除结项
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.GetJieXiangById(System.Guid)">
+            <summary>
+            根据 结项编号获取
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.GetJieXiangBy(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            筛选
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JieXiangController.GetJieXiangjfs(System.Guid)">
+            <summary>
+            获取该结项的经费 详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JingFeiController.#ctor(FAP.Client.FAPContext,FAP.Client.Service.OrganizationService,FAP.Client.Service.PrivilegeService,FAP.Client.Service.MessageService,FAP.Client.Service.LoggerService,SHPC.KeYanXiangMuGuanLi.Engine.Models.KeYanGuanLiContext,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{SHPC.KeYanXiangMuGuanLi.Web.Controllers.JingFeiController},AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="fapContext"></param>
+            <param name="organizationService"></param>
+            <param name="privilegeService"></param>
+            <param name="messageService"></param>
+            <param name="loggerService"></param>
+            <param name="dbContext"></param>
+            <param name="httpContext"></param>
+            <param name="memoryCache"></param>
+            <param name="configuration"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JingFeiController.DelJingFei(System.Guid)">
+            <summary>
+            删除经费
+            </summary>
+            <param name="jingfeiid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JingFeiController.UpdateJingFei(SHPC.KeYanXiangMuGuanLi.Engine.Models.JingFei)">
+            <summary>
+            编辑经费
+            </summary>
+            <param name="jingfei"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JingFeiController.GetJingFeisByXiangMuIds(System.Guid)">
+            <summary>
+            获取当前项目下的经费列表(排序)
+            </summary>
+            <param name="XiangMuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JingFeiController.SaveJingFei(SHPC.KeYanXiangMuGuanLi.Engine.Models.JingFei,System.Guid)">
+            <summary>
+            保存经费
+            </summary>
+            <param name="jf"></param>
+            <param name="xiangmuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JingFeiController.GetJingFeisByJingFeiId(System.Guid)">
+            <summary>
+            
+            </summary>
+            <param name="JingFeiId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.JingFeiController.GetJingFeisBynull">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._fapContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._organizationService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._privilegeService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._messageService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._loggerService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._httpContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._memoryCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._mapper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._dbContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._xiangMuChengGuoService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._jingFeiService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._xiangMuFangAnService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._xiangMuService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase._xiangMuZuYuanService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.fapContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.organizationService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.privilegeService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.messageService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.loggerService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.dbContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.logger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.mapper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.KeYanControllerBase.#ctor(FAP.Client.FAPContext,FAP.Client.Service.OrganizationService,FAP.Client.Service.PrivilegeService,FAP.Client.Service.MessageService,FAP.Client.Service.LoggerService,SHPC.KeYanXiangMuGuanLi.Engine.Models.KeYanGuanLiContext,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Logging.ILogger,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="fapContext"></param>
+            <param name="organizationService"></param>
+            <param name="privilegeService"></param>
+            <param name="messageService"></param>
+            <param name="loggerService"></param>
+            <param name="dbContext"></param>
+            <param name="configuration"></param>
+            <param name="httpContext"></param>
+            <param name="memoryCache"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.UploadController.UploadFile">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.UploadController.DelFile">
+            <summary>
+            删除上传附件（真删）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController.#ctor(FAP.Client.FAPContext,FAP.Client.Service.OrganizationService,FAP.Client.Service.PrivilegeService,FAP.Client.Service.MessageService,FAP.Client.Service.LoggerService,SHPC.KeYanXiangMuGuanLi.Engine.Models.KeYanGuanLiContext,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController},AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="fapContext"></param>
+            <param name="organizationService"></param>
+            <param name="privilegeService"></param>
+            <param name="messageService"></param>
+            <param name="loggerService"></param>
+            <param name="dbContext"></param>
+            <param name="httpContext"></param>
+            <param name="memoryCache"></param>
+            <param name="configuration"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController.GetXiangMuById(System.Guid)">
+            <summary>
+            获取这个项目下的成果附件
+            </summary>
+            <param name="ChengGuoID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController.GetXiangMuChengGuos(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            总览成果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController.GetXiangMuChengGuoByUser">
+            <summary>
+            获取当前登录人的成果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController.AddXiangMuChengGuo(SHPC.KeYanXiangMuGuanLi.Web.Utils.ChengGuoRequest_Bag)">
+            <summary>
+            成果上传
+            </summary>
+            <param name="chengGuoRequest_Bag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController.GetXiangMuChengGuoById(System.Guid)">
+            <summary>
+            详情
+            </summary>
+            <param name="ChengGuoID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController.DelXiangMuChengGuo(System.Guid)">
+            <summary>
+            真删
+            </summary>
+            <param name="ChengGuoID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuChengGuoController.UpdateXiangMuChengGuo(System.Guid)">
+            <summary>
+            审核
+            </summary>
+            <param name="cgId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.#ctor(FAP.Client.FAPContext,FAP.Client.Service.OrganizationService,FAP.Client.Service.PrivilegeService,FAP.Client.Service.MessageService,FAP.Client.Service.LoggerService,SHPC.KeYanXiangMuGuanLi.Engine.Models.KeYanGuanLiContext,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController},AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="fapContext"></param>
+            <param name="organizationService"></param>
+            <param name="privilegeService"></param>
+            <param name="messageService"></param>
+            <param name="loggerService"></param>
+            <param name="dbContext"></param>
+            <param name="httpContext"></param>
+            <param name="memoryCache"></param>
+            <param name="configuration"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetXiangMuXiangQingById(System.Guid)">
+            <summary>
+            根据项目id 获取详情
+            </summary>
+            <param name="xiangmuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetXiangMuById(System.Guid)">
+            <summary>
+            编辑项目
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetXiangMuByZiDuan(System.Int32,System.Int32,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            筛选
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <param name="applyName"></param>
+            <param name="bumen"></param>
+            <param name="xiangmuleixing"></param>
+            <param name="yanjiuleixing"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetXiangMuByGeRen(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            筛选个人
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <param name="xiangmuleixing"></param>
+            <param name="yanjiuleixing"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetXiangMus(System.Int32,System.Int32)">
+            <summary>
+            总览页面
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetXiangMusByUserId(System.Int32,System.Int32)">
+            <summary>
+            当前登录人页面（个人）
+            </summary>
+            <param name="skip"></param>
+            <param name="take"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetXiangMuSchema">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.SaveXiangMu(SHPC.KeYanXiangMuGuanLi.Engine.DTOs.XiangMuDto)">
+            <summary>
+            测试 保存
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.DelXiangMu(System.Guid)">
+            <summary>
+            删除项目
+            </summary>
+            <param name="xiangmuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.XiangMuYanQi(System.Guid,System.DateTime)">
+            <summary>
+            项目延期
+            </summary>
+            <param name="xiangmuId"></param>
+            <param name="yanQiDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.ShenPi(SHPC.KeYanXiangMuGuanLi.Engine.Models.XiangMu)">
+            <summary>
+            项目审批
+            </summary>
+            <param name="xiangmu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetResultBy(System.Guid)">
+            <summary>
+            根据选择人获取用户信息
+            </summary>
+            <param name="UserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.exportresult(System.Guid)">
+            <summary>
+            导出个人模板 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetById(System.Guid)">
+            <summary>
+            获取需要导出的信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.WriteDocf(SHPC.KeYanXiangMuGuanLi.Engine.DTOs.XiangMuDto)">
+            <summary>
+            第一部分
+            </summary>
+            <param name="xiangmu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.WriteDocs(System.Collections.Generic.List{SHPC.KeYanXiangMuGuanLi.Engine.Models.JingFei})">
+            <summary>
+            第二部分（经费以前）
+            </summary>
+            <param name="jinFeis"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.WriteDocs(System.Guid,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <param name="docPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuController.GetPrint(System.Guid)">
+            <summary>
+            打印
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuFangAnController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuFangAnController.#ctor(FAP.Client.FAPContext,FAP.Client.Service.OrganizationService,FAP.Client.Service.PrivilegeService,FAP.Client.Service.MessageService,FAP.Client.Service.LoggerService,SHPC.KeYanXiangMuGuanLi.Engine.Models.KeYanGuanLiContext,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuFangAnController},AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="fapContext"></param>
+            <param name="organizationService"></param>
+            <param name="privilegeService"></param>
+            <param name="messageService"></param>
+            <param name="loggerService"></param>
+            <param name="dbContext"></param>
+            <param name="httpContext"></param>
+            <param name="memoryCache"></param>
+            <param name="configuration"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuFangAnController.DelFangAn(System.Guid)">
+            <summary>
+            删除当前方案
+            </summary>
+            <param name="fananid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuFangAnController.UpdateFangAn(SHPC.KeYanXiangMuGuanLi.Engine.Models.XiangMuFangAn)">
+            <summary>
+            编辑方案
+            </summary>
+            <param name="FangAn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuFangAnController.GetFangAn(System.Guid)">
+            <summary>
+            获取当前项目下的方案
+            </summary>
+            <param name="fanganid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController.#ctor(FAP.Client.FAPContext,FAP.Client.Service.OrganizationService,FAP.Client.Service.PrivilegeService,FAP.Client.Service.MessageService,FAP.Client.Service.LoggerService,SHPC.KeYanXiangMuGuanLi.Engine.Models.KeYanGuanLiContext,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController},AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="fapContext"></param>
+            <param name="organizationService"></param>
+            <param name="privilegeService"></param>
+            <param name="messageService"></param>
+            <param name="loggerService"></param>
+            <param name="dbContext"></param>
+            <param name="httpContext"></param>
+            <param name="memoryCache"></param>
+            <param name="configuration"></param>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController.DelZuYuan(System.Guid)">
+            <summary>
+            删除组员
+            </summary>
+            <param name="zuyuanId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController.UpdateZuYuan(SHPC.KeYanXiangMuGuanLi.Engine.Models.XiangMuZuYuan)">
+            <summary>
+            编辑
+            </summary>
+            <param name="zuyuan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController.GetZuYuanByIds(System.Guid)">
+            <summary>
+            获取当前项目下的组员
+            </summary>
+            <param name="XiangMuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController.GetZuYuanById(System.Guid)">
+            <summary>
+            编辑组员
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController.SaveZuYuan(SHPC.KeYanXiangMuGuanLi.Engine.Models.XiangMuZuYuan,System.Guid)">
+            <summary>
+            保存组员
+            </summary>
+            <param name="xmzy"></param>
+            <param name="xiangmuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController.SaveZuYuan1(SHPC.KeYanXiangMuGuanLi.Engine.Models.XiangMuZuYuan)">
+             <summary>
+            测试保存
+             </summary>
+             <param name="xiangmuzuyuan"></param>
+             <returns></returns>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Controllers.XiangMuZuYuanController.GetZuYuanBynull">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Program.BuildWebHost(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+             This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:SHPC.KeYanXiangMuGuanLi.Web.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.JieXiang_RequestBag.JieXiang">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.JieXiang_RequestBag.jiexiangzuyuans">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.JieXiang_RequestBag.jxJingFeis">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.cgKeYanXiangMu">
+            <summary>
+            科研项目
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.cgZuZhuo">
+            <summary>
+            著作
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.cgJiaoCai">
+            <summary>
+            教材
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.cgLunWen">
+            <summary>
+            论文
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.CgRuanJianYuZhuanLi">
+            <summary>
+            软件与专利
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.cgQiTa">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.CgShenHeYiJian">
+            <summary>
+            审核意见
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.CgShenHe">
+            <summary>
+            审核
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Request_CG_Bag.jilu">
+            <summary>
+            记录
+            </summary>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Utils.canyuze">
+            <summary>
+            参与者
+            </summary>
+        </member>
+        <member name="T:SHPC.KeYanXiangMuGuanLi.Web.Utils.Xiangmu_Request_Bag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Xiangmu_Request_Bag.XiangMu">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Xiangmu_Request_Bag.JingFeis">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Xiangmu_Request_Bag.XiangMuZuYuans">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:SHPC.KeYanXiangMuGuanLi.Web.Utils.Xiangmu_Request_Bag.XiangMuFangAn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WordExportDemo.WordHelper.Export(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            导出word
+            </summary>
+            <param name="tempFilePath">模板路径</param>
+            <param name="outPath">保存路径</param>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:WordExportDemo.WordHelper.GetListMatches(System.String)">
+            <summary>
+            只获取列表匹配项
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

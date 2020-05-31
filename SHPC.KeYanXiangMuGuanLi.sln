@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHPC.KeYanXiangMuGuanLi.Engine", "SHPC.KeYanXiangMuGuanLi.Engine\SHPC.KeYanXiangMuGuanLi.Engine.csproj", "{BD580967-F6F0-45C5-B991-05C44725D52E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHPC.KeYanXiangMuGuanLi.Web", "SHPC.KeYanXiangMuGuanLi.Web\SHPC.KeYanXiangMuGuanLi.Web.csproj", "{C0F8C742-56DD-4BCD-9C86-C1BFEC494DF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD580967-F6F0-45C5-B991-05C44725D52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD580967-F6F0-45C5-B991-05C44725D52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD580967-F6F0-45C5-B991-05C44725D52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD580967-F6F0-45C5-B991-05C44725D52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F8C742-56DD-4BCD-9C86-C1BFEC494DF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F8C742-56DD-4BCD-9C86-C1BFEC494DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F8C742-56DD-4BCD-9C86-C1BFEC494DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F8C742-56DD-4BCD-9C86-C1BFEC494DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E73A6F9E-6245-4C4A-BAFA-695384E6BD5B}
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "14.0.6",
+    "axios": "0.18.0",
+    "css-loader": "1.0.0",
+    "file-loader": "2.0.0",
+    "style-loader": "0.23.0",
+    "typescript": "3.3.0-dev.20181122",
+    "ts-loader": "5.3.0",
+    "ts-import-plugin": "1.5.5",
+    "vue": "2.5.17",
+    "vue-loader": "15.4.2",
+    "vue-router": "3.0.2",
+    "vue-template-compiler": "2.5.17",
+    "vuex": "3.0.1",
+    "webpack": "4.26.1",
+    "webpack-cli": "3.1.2",
+    "moment": "2.22.2",
+    "less": "3.9.0",
+    "less-loader": "4.1.0",
+    "sass-loader": "7.1.0",
+    "element-resize-detector": "1.1.14",
+    "vuedraggable": "2.16.0",
+    "qs": "6.5.2",
+    "iview": "3.2.1",
+    "vant": "2.0.6",
+    "vue-calendar": "0.1.5",
+    "vue-fullcalendar": "1.0.9",
+    "iview-area": "1.6.0"
+  },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

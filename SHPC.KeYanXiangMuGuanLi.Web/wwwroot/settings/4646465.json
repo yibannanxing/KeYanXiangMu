@@ -1,0 +1,119 @@
+{
+  "workFlowName": "科研院成果审批流程",
+  "workFlowNumberTemplate": "splc",
+  "draftingNodeId": "0",
+  "examinationAndApprovalNodeId": "1",
+  "nodes": [
+    {
+      "nodeId": "0",
+      "nodeType": 0,
+      "nodeIndex": 1,
+      "nodeName": "开始",
+      "isEditForm": true,
+      "editFeilds": "",
+      "selectType": "",
+      "selectUserMode": ""
+    },
+    {
+      "nodeId": "1",
+      "nodeType": 1,
+      "nodeIndex": 2,
+      "nodeName": "部门领导审批",
+      "isEditForm": false,
+      "editFeilds": "",
+      "selectType": "1",
+      "selectUserMode": "0"
+    },
+    {
+      "nodeId": "2",
+      "nodeType": 1,
+      "nodeIndex": 3,
+      "nodeName": "管理处",
+      "isEditForm": false,
+      "editFeilds": "",
+      "selectType": "1",
+      "selectUserMode": "0"
+    },
+    {
+      "nodeId": "3",
+      "nodeType": 1,
+      "nodeIndex": 4,
+      "nodeName": "院领导",
+      "isEditForm": false,
+      "editFeilds": "",
+      "selectType": "1",
+      "selectUserMode": "0"
+    },
+    {
+      "nodeId": "4",
+      "nodeType": 2,
+      "nodeIndex": 5,
+      "nodeName": "结束",
+      "isEditForm": false,
+      "editFeilds": "",
+      "selectType": "",
+      "selectUserMode": ""
+    }
+  ],
+  "lines": [
+    {
+      "fromNodeId": "0",
+      "toNodeId": "1",
+      "expression": ""
+    },
+    {
+      "fromNodeId": "1",
+      "toNodeId": "2",
+      "expression": ""
+    },
+    {
+      "fromNodeId": "2",
+      "toNodeId": "3",
+      "expression": ""
+    },
+    {
+      "fromNodeId": "3",
+      "toNodeId": "4",
+      "expression": ""
+    }
+    
+  ],
+  "approvalUsersSet": [
+    {
+      "nodeId": "0",
+      "approvalType": "ou-r",
+      "isCanEnd": false,
+      "isKeShi": false,
+      "userMaps": [ ]
+    },
+    {
+      "nodeId": "1",
+      "approvalType": "ou-r",
+      "isCanEnd": false,
+      "isKeShi": true,
+      "userMaps": [ ]
+    },
+    {
+      "nodeId": "2",
+      "approvalType": "ou-r",
+      "isCanEnd": false,
+      "isKeShi": true,
+      "userMaps": [ ]
+    },
+    {
+      "nodeId": "3",
+      "approvalType": "ou-r",
+      "isCanEnd": false,
+      "isKeShi": true,
+      "userMaps": [ ]
+    },
+    {
+      "nodeId": "4",
+      "approvalType": "ou-r",
+      "isCanEnd": false,
+      "isKeShi": true,
+      "userMaps": [ ]
+    }
+  ]
+
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    //"outDir": "wwwroot/scripts/",
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es2018",
+    //"strict": true,
+    "types": [ "node" ]
+  },
+  "include": [ "src", "Controllers/AttendanceControllerBase.cs", "Utils/Xiangmu_Request_Bag.cs", "wwwroot/heartbeat.html"],
+  "module": "ESNext",
+  "compileOnSave": true
+}

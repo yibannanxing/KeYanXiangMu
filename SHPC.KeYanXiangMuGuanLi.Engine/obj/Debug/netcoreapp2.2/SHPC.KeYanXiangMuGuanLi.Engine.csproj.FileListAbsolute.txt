@@ -1,0 +1,11 @@
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\bin\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.deps.json
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\bin\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.runtimeconfig.json
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\bin\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.runtimeconfig.dev.json
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\bin\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.dll
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\bin\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.pdb
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\obj\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.csproj.CoreCompileInputs.cache
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\obj\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.AssemblyInfoInputs.cache
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\obj\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.AssemblyInfo.cs
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\obj\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.dll
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\obj\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.pdb
+C:\zzqworks\SHPC.KeYanXiangMuGuanLi\SHPC.KeYanXiangMuGuanLi.Engine\obj\Debug\netcoreapp2.2\SHPC.KeYanXiangMuGuanLi.Engine.genruntimeconfig.cache
